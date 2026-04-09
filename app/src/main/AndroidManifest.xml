@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WellnessApp">
+        <activity
+            android:name=".NutritionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NutritionDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GreekYoghurtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BakedFishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrownRnbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmoothieBowlsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BoiledEggsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AvocadoToastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OatmealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VegetableStirFryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GrilledChickenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FruitSaladActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyGoalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HydrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

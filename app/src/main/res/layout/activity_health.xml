@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C074D"
+    tools:context=".HealthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Healthy Recipies!"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:background="@drawable/shape"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#001214"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/platter"
+            android:scaleType="center"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fruitsalad"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fruitsalad" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fruit Salad"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A mix of Fresh Fruits"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/grilledchicken"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/grilledchicken" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grilled Chicken"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low fat grilled chicken served with vegetables"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/vegatablestirfry"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/vegetablestirfry" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetable Stir Fry"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carrots, broccoli and peppers cooked lightly"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/oatmeal"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/oatmealbreakfast" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oatmeal Breakfast"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oats with milk and fruits"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/avocadotoast"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avocadotoast" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avocado Toast"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/foodDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Whole grain bread topped with avocado"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boiledeggs"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/boiledeggs" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Boiled Eggs"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rich in protein and easy to prepare"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/smoothiebowl"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/smoothiebowl" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Smoothie Bowl"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blended fruits with yoghurt and fruits"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/brownrnb"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/brownrnb" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brown Rice and Beans"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Healthy and full of fibre"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bakedfish"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bakedfish" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baked Fish"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fish baked with lemon and spices"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/greekyoghurt"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="160dp"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#7AABFF"
+                android:padding="8dp">
+
+                <!-- IMAGE (25%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/greekyoghurtwithhoney" />
+
+                <!-- TEXT (75%) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Greek Yoghurt With Honey"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good for Digestion and very nutritious"
+                        android:textSize="14sp"
+                        android:textColor="#666"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
