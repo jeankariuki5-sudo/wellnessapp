@@ -34,11 +34,20 @@
             android:src="@drawable/image1"
             android:layout_marginTop="15dp"/>
 
+        <com.google.android.gms.ads.AdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adview"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+
         <!--        below is button number 1-->
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/health_recipes"
+            android:drawableLeft="@drawable/healthyfood"
             android:text="Healthy Recipes"
             android:textSize="20sp"
             android:textColor="#fff"
@@ -50,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/nutrition_advice"
+            android:drawableRight="@drawable/nutritionplan"
             android:text="Nutrition Advice"
             android:textSize="20sp"
             android:textColor="#fff"
@@ -58,22 +68,24 @@
 
         <!--       Below is button number 3-->
 
-        <!-- Below is button number 4-->
+
         <Button
             android:id="@+id/meditation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:backgroundTint="#0C074D"
+            android:drawableLeft="@drawable/meditation"
             android:text="Meditation"
             android:textSize="20sp"
             android:textColor="#fff"/>
 
-
+        <!-- Below is button number 4-->
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/hydration_alert"
+            android:drawableRight="@drawable/hydration"
             android:text="Hydration Alert"
             android:textSize="20sp"
             android:textColor="#fff"
@@ -85,6 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/start_exercise"
+            android:drawableLeft="@drawable/heartrate"
             android:text="Start Exercise"
             android:textSize="20sp"
             android:textColor="#fff"
@@ -96,6 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/daily_motivation"
+            android:drawableRight="@drawable/success"
             android:text="Daily Motivation"
             android:textSize="20sp"
             android:textColor="#fff"
@@ -107,22 +121,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/weekly_goals"
+            android:drawableLeft="@drawable/reward"
             android:text="Weekly Goals"
             android:textSize="20sp"
             android:textColor="#fff"
             android:backgroundTint="#0C074D"
             android:layout_marginTop="15dp"/>
 
-        <!-- Below is button number 4-->
+        <!-- Below is button number 8-->
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/check_progress"
+            android:drawableRight="@drawable/progress"
             android:text="Check Progress"
             android:textSize="20sp"
             android:textColor="#fff"
             android:backgroundTint="#0C074D"
             android:layout_marginTop="15dp"/>
+
+
+        <!-- Below is button number 9-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/learnmore"
+            android:text="Learn more..."
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:backgroundTint="#0C074D"
+            android:layout_marginTop="15dp"/>
+
 
 
 

@@ -35,6 +35,13 @@ class ExerciseActivity : AppCompatActivity() {
             durationSeconds = 60
 
         )
+
+        setupExerciseCard(
+            progressBarId = R.id.progressBarpushups,
+            btnStartId = R.id.pushupstart,
+            btnPauseId = R.id.pushupstop,
+            durationSeconds = 120
+        )
     }
 
     private fun setupExerciseCard(
